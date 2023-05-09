@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter the marks:\n");
+    scanf("%d",&n);
+    if(n>=90)
+    printf("grade is A");
+    else if(n<=89)
+    printf("grade is B");
+    else if(n<=77)
+    printf("grade is C");
+    else if(n<=64)
+    printf("grade is D");
+    else
+    printf("grade is F");
+    return 0;
+}
