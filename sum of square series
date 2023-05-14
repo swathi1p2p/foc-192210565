@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    int num,sum=0;
+    printf("Enter  a positive number to sum series: ");
+    scanf("%d",&num);
+    sum=(num*(num+1)*(2*num+1))/6;
+    printf("The sum of the series 1²+2²+3²+....+n² is %d",sum);
+    return 0;
+}
