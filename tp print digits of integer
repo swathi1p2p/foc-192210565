@@ -1,0 +1,19 @@
+#include <stdio.h>
+void printDigits(int number) {
+if (number < 0)
+number = -number;
+if (number < 10) {
+printf("%d\n", number);
+ return;
+  }
+ printDigits(number / 10);   
+printf("%d\n", number % 10);  
+}
+int main() {
+int number;
+printf("Enter an integer number: ");
+scanf("%d", &number);
+printf("Digits of the number: \n");
+printDigits(number);
+return 0;
+}
